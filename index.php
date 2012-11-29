@@ -12,11 +12,7 @@
 		{
 			header("Location:login/index.php");
 		}
-
-
 	?>
-
-
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="STYLESHEET"  href="css/frame.css" type="text/css">
 		<script type="text/javascript "src="javascript/frame_jump.js"></script>
@@ -25,9 +21,9 @@
 	</head>
 
 		<!-- 本番は17%、83%ぐらい -->
-		<frameset rows=25%,75% >
+		<frameset rows=15%,85% >
 			<frame src="main/menu.php" name=top scrolling="no">
-			<frameset cols=30%,70% frameborder=no border=no id=direction>
+			<frameset cols=20%,80% frameborder=no border=no id=direction>
 				<frame src="top_left.php" name="left">	<!-- フレーム左部分 -->
 				<frame src="top_right.php" name="right">	<!-- フレーム右部分 -->
 			</frameset>

@@ -26,26 +26,24 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/back_ground.css" />
 		<link rel="stylesheet" type="text/css" href="../css/text_display.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		
 		<title>下書き</title>
 	</head>
 
 	<body>
-		<img class="bg" src="../images/blue-big.jpg" alt="" />
-		<div id="container">
-		<div align="center">
-			<font class="Cubicfont">下書き</font>
-			<br>
-		</div>
-		<br>
-		<hr color="blue">
-
+	<div id="main">
+<!-- メインコンテンツ▼ -->
+<h2>下書き</h2>
+<p>
+	
 		<!-- テーブルの作成 -->
-		<div align="center">
 			<table border="1">
-				<tr bgcolor="yellow">
-				<td align="center"width="150"><font size="5">日付</font></td>
-				<td align="center"width="200"><font size="5">TO</font></td>
-				<td align="center"width="400"><font size="5">件名</font></td>
+				<tr class="tdheader">
+				<th align="center"width="150"><font size="5">日付</font></th>
+				<th align="center"width="200"><font size="5">TO</font></th>
+				<th align="center"width="400"><font size="5">件名</font></th>
+				</tr>
 
 				<?php
 				for ($i = 0; $i < $count; $i++){
@@ -64,7 +62,7 @@
 				?>
 			</table>
 			<hr>
-		</div>
-		</div>
+</p>		
+			</div>
 	</body>
 </html>

@@ -26,15 +26,15 @@
 	  <meta http-equiv="Content-Style-Type" content="text/css">
 	  <link rel="stylesheet" type="text/css" href="../css/button.css" />
 	  <link rel="stylesheet" type="text/css" href="../css/back_ground.css" />
-	</head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	  </head>
 
 	<body>
-		<img class="bg" src="../images/blue-big.jpg" alt="" />
-		<div id="container">
-		<form action="ReplyBox.php" method="POST">
-			<div align="center">
-			    <font size = "7">確認画面</font><br>
-			</div>
+<div id="main">
+<!-- メインコンテンツ▼ -->
+<h2>確認画面</h2>
+<p>
+<form action="ReplyBox.php" method="POST">
 			<div>
 				<font size = "4"><a href="MailBox.php">←戻る</a></font>
 			</div>
@@ -56,8 +56,10 @@
 		    <input type="hidden" value="<?= $id ?>" name="link_id">
 		    <input class="button4" type="submit" value="返信">
 	    </form>
-	    </div>
-    </body>
+
+</p>
+</div>
+	</body>
 </html>
 
 

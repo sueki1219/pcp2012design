@@ -23,16 +23,15 @@
 	　　<title> 確認画面</title>
 	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	  <link rel="stylesheet" type="text/css" href="../css/back_ground.css" />
-	</head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	  </head>
 
 	<body>
-		<img class="bg" src="../images/blue-big.jpg" alt="" />
-		<div id="container">
-		<form action="ReplyBox.php" method="POST">
-			<div align="center">
-			    <font size = "7">確認画面</font><br>
-			</div>
-
+<div id="main">
+<!-- メインコンテンツ▼ -->
+<h2>確認画面</h2>
+<p>
+	<form action="ReplyBox.php" method="POST">
 			<font size = "4"><a href="OutBox.php">←戻る</a></font>
 
 			<hr color="green">
@@ -50,6 +49,9 @@
 		    <input type="hidden" value="<?= $row['title'] ?>" name="title">
 
 	    </form>
-	    </div>
+
+
+</p>
+</div>
     </body>
 </html>

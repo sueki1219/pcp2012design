@@ -17,22 +17,15 @@
 	　　<title> 新規作成</title>
 	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	  <meta http-equiv="Content-Style-Type" content="text/css">
-	  <link rel="stylesheet" type="text/css" href="../css/button.css" />
-	  <link rel="stylesheet" type="text/css" href="../css/back_ground.css" />
-	  <link rel="stylesheet" type="text/css" href="../css/text_display.css" />
-	</head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	  </head>
 
 	<body>
-		<img class="bg" src="../images/blue-big.jpg" alt="" />
-		<div id="container">
+	<div id="main">
+<!-- メインコンテンツ▼ -->
+<h2>新規作成</h2>
+<p>
 		<form action="relay.php" method="POST" id="input">
-			  <div align="center">
-			   <font class="Cubicfont">新規作成</font>
-			  </div>
-
-			  <hr color="blue">
-			  <br><br>
-
 			  <font size="3">宛先</font>
 			  <select name="to">
 			  <?php
@@ -61,6 +54,10 @@
 			  	</tr>
 			  </table>
 	    </form>
-	    </div>
+</p>
+<div class="up"><a href="#top">Page Top ▲</a></div>
+<!-- メインコンテンツ▲ -->
+</div>
+	
     </body>
 </html>

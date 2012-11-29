@@ -25,32 +25,23 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/back_ground.css" />
 		<link rel="stylesheet" type="text/css" href="../css/text_display.css" />
-		<link rel="stylesheet" type="text/css" href="../css/table.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<title>受信ボックス</title>
 	</head>
 
 	<body>
-		<img class="bg" src="../images/blue-big.jpg" alt="" />
-		<div id="container">
-		<div align="center">
-			<font class="Cubicfont">受信ボックス</font>
-			<br>
-		</div>
-		<br>
-		<hr color="blue">
+	<div id="main">
+<!-- メインコンテンツ▼ -->
+<h2>受信箱</h2>
+<p>
+<h3>連絡帳</h3>
 
-		<!-- 連絡帳の受信一覧テーブル作成 -->
-		<p align="left">
-			<font size="5">連絡帳</font>
-		</p>
-
-		<div align="center">
-			<table class="table_01">
-				<tr bgcolor="yellow">
-				<td align="center"width="150"><font size="5">日付</font></td>
-				<td align="center"width="200"><font size="5">FROM</font></td>
-				<td align="center"width="400"><font size="5">件名</font></td>
-
+			<table  border="1">
+			<tr>
+				<th align="center"width="150"><font size="5">日付</font></th>
+				<th align="center"width="200"><font size="5">FROM</font></th>
+				<th align="center"width="400"><font size="5">件名</font></th>
+			</tr>
 				<?php
 				for ($i = 0; $i < $count; $i++){
 					$row = mysql_fetch_array($result);
@@ -69,7 +60,6 @@
 
 			</table>
 			<hr>
-		</div>
 
 		<?php
 
@@ -93,16 +83,13 @@
 		?>
 
 		<!-- プリントの受信一覧テーブル作成 -->
-		<p align="left">
-			<font size="5">配信</font>
-		</p>
-
-		<div align="center">
-			<table class="table_01">
-				<tr bgcolor="yellow">
-					<td align="center"width="150"><font size="5">日付</font></td>
-					<td align="center"width="200"><font size="5">FROM</font></td>
-					<td align="center"width="400"><font size="5">件名</font></td>
+<h3>配信</h3>
+		
+			<table border="1">
+				<tr>
+					<th align="center"width="150"><font size="5">日付</font></th>
+					<th align="center"width="200"><font size="5">FROM</font></th>
+					<th align="center"width="400"><font size="5">件名</font></th>
 				</tr>
 
 				<?php
@@ -123,7 +110,7 @@
 				?>
 
 			</table>
-		</div>
+			</p>
 		</div>
 	</body>
 </html>

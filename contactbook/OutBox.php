@@ -28,30 +28,26 @@
 		<link rel="stylesheet" type="text/css" href="../css/back_ground.css" />
 		<link rel="stylesheet" type="text/css" href="../css/text_display.css" />
 		<link rel="stylesheet" type="text/css" href="../css/table.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		
 		<title>送信ボックス</title>
 	</head>
 
 	<body>
-		<img class="bg" src="../images/blue-big.jpg" alt="" />
-		<div id="container">
-		<div align="center">
-			<font class="Cubicfont">送信ボックス</font><br><br>
-		</div>
-
-		<hr color="blue">
-		<br><br><br>
-
+<div id="main">
+<!-- メインコンテンツ▼ -->
+<h2>送信ボックス</h2>
+<p>
+	
 		<!-- 連絡帳の受信一覧テーブル作成 -->
-		<div align="left">
-			<font size="5">連絡帳</font>
-		</div>
-		<div align="center">
+			<h3>連絡帳</h3>
 		<br>
-			<table class="table_01">
+			<table border="1">
 				<tr bgcolor="yellow">
-					<td align="center"width="150"><font size="5">日付</font></td>
-					<td align="center"width="200"><font size="5">TO</font></td>
-					<td align="center"width="400"><font size="5">件名</font></td>
+					<th align="center"width="150"><font size="5">日付</font></th>
+					<th align="center"width="200"><font size="5">TO</font></th>
+					<th align="center"width="400"><font size="5">件名</font></th>
+					</tr>
 
 				<?php
 				for ($i = 0; $i < $count; $i++){
@@ -59,18 +55,18 @@
 				?>
 
 				<tr>
-					<th><?= $row['send_date'] ?></th>
-					<th><?= $row['reception_user_name'] ?></th>
-					<th>
+					<td><?= $row['send_date'] ?></td>
+					<td><?= $row['reception_user_name'] ?></td>
+					<td>
 						<!-- GETでシークを渡す -->
 						<a href="sendview.php?id=<?= $row['contact_book_seq'] ?>"><?= $row['title'] ?></a>
-					</th>
+					</td>
 				</tr>
 				<?php
 					}
 				?>
 			</table>
 		</div>
-		</div>
+		</p>
 	</body>
 </html>
