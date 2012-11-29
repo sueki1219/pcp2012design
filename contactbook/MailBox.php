@@ -47,12 +47,12 @@
 					$row = mysql_fetch_array($result);
 				?>
 					<tr>
-						<th><?= $row['send_date'] ?></th>
-						<th><?= $row['send_user_name'] ?></th>
-						<th>
+						<td><?= $row['send_date'] ?></td>
+						<td><?= $row['send_user_name'] ?></td>
+						<td>
 							<!-- GETでcontact_book_seqを送る -->
 							<a href="view.php?id=<?= $row['contact_book_seq'] ?>"><?= $row['title'] ?></a>
-						</th>
+						</td>
 					</tr>
 				<?php
 				}
@@ -97,13 +97,13 @@
 					$row = mysql_fetch_array($result);
 				?>
 					<tr>
-						<th><?= $row['delivery_date'] ?></th>
-						<th><?= $row['send_user_name'] ?></th>
-						<th>
+						<td><?= $row['delivery_date'] ?></td>
+						<td><?= $row['send_user_name'] ?></td>
+						<td>
 							<!-- GETでprint_delivery_seqを送る -->
 							<!-- <a href="<?= printurl ?>"><?= $row['title'] ?></a> -->
 							<a href="pdf_relay.php?id=<?= $row['print_delivery_seq'] ?>"><?= $row['title'] ?></a>
-						</th>
+						</td>
 					</tr>
 				<?php
 				}
